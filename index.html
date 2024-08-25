@@ -215,9 +215,9 @@
             { title: "Address of Destination", info: "1213 E Clay St Ground Floor, Richmond, VA 23298." },
             { title: "Distance of Destination", info: "" },
             { title: "Estimated Time to Destination", info: "" },
-            { title: "State of Charge of Battery", info: "9% Charge." },
-            { title: "Range of Current Battery", info: "27 Minutes." },
-            { title: "Estimated Drive-distance with Current Charge", info: "20 Miles." },
+            { title: "State of Charge of Battery", info: "9% charge." },
+            { title: "Range of Current Battery", info: "27 minutes." },
+            { title: "Estimated Drive Distance with Current Charge", info: "20 miles." },
             { title: "Type of Chargin Socket", info: "J1772." },
             { title: "kW Needed to Fully Charge Your Car", info: "54.6 kW." }
         ];
@@ -247,7 +247,7 @@
                         { type: 'J1772', value: '522' }
                     ],
                 socketAvalability: [
-                        { type: 'J1772', value: '1 available' }
+                        { type: 'J1772', value: '1' }
                     ],
 
                 energySource: '44% Grid, 56% Renewable',
@@ -257,9 +257,9 @@
                 parkingFee: 'paid',
                 parkingFeeRate: 'for some amount of time',
 
-                coffee: 'Yes <br><br> There is a coffee shop in walking distance 0.3 miles away.',
-                grocery: 'Yes <br><br> There is a grocery store in walking distance 0.9 miles away.',
-                sportsClothes: 'Yes <br><br> There is a sports or clothing store in walking distance 0.7 miles away.',
+                coffee: 'Yes. <br><br> There is a coffee shop in walking distance 0.3 miles away.',
+                grocery: 'Yes. <br><br> There is a grocery store in walking distance 0.9 miles away.',
+                sportsClothes: 'Yes. <br><br> There is a sports or clothing store in walking distance 0.7 miles away.',
                 
                 rating: '★ ★ ★ ✰ ✰',
                 ratingNum: '19'
@@ -285,20 +285,20 @@
                         { type: 'J1772', value: '546' }
                     ],
                 socketAvalability: [
-                        { type: 'J1772', value: '0 available' }
+                        { type: 'J1772', value: '0' }
                     ],       
 
                 energySource: '31% Grid, 69% Renewable',
 
                 chargingFee: '$0.00',
-                chargingFeeRate: 'per kWh',
+                chargingFeeRate: 'per any amount of power',
 
                 parkingFee: '$4.00',
                 parkingFeeRate: 'per hour',
 
-                coffee: 'Yes <br><br> There is a coffee shop in walking distance 0.05 miles away.',
-                grocery: 'Yes <br><br> There is a grocery store in walking distance 0.7 miles away.',
-                sportsClothes: 'Yes <br><br> There is a sports or clothing store in walking distance 0.5 miles away.',
+                coffee: 'Yes. <br><br> There is a coffee shop in walking distance 0.05 miles away.',
+                grocery: 'Yes. <br><br> There is a grocery store in walking distance 0.7 miles away.',
+                sportsClothes: 'Yes. <br><br> There is a sports or clothing store in walking distance 0.5 miles away.',
                 
                 rating: '★ ★ ★ ★ ✰',
                 ratingNum: '49'
@@ -582,7 +582,7 @@
             content = `<p style="font-size: 16px; padding: 5px;">${infoContent}</p>`;
 
             if (infoType === 'rating') {
-                content = `<p style="font-size: 16px; padding: 5px;"><span class="stars">${station.rating}</span> <br><br> There are ${station.ratingNum} total reviews</p>`;
+                content = `<p style="font-size: 16px; padding: 5px;"><b>Rating:</b><br><span class="stars">${station.rating}</span> <br><br> There are ${station.ratingNum} total reviews.</p>`;
                 console.log('Rating clicked');
             }
 
